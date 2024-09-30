@@ -1,0 +1,53 @@
+body {
+    background-color: black;    
+}
+
+main {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+#gerargato {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    color: white;
+    background-color: blueviolet;
+    margin-top: 2rem;
+    padding: 0.75rem 0.5rem;
+    border-radius: 0.65rem;
+    border-style: inset;
+    text-wrap: wrap;
+    width: 8rem;
+    height: auto;
+
+    transition: background-color 0.05s ease-in-out;
+}
+
+#gerargato:hover {
+    background-color: mediumpurple;
+    color: lightgoldenrodyellow;
+    transition: background-color 0.10s ease-in-out color 0.10s ease-in-out;
+}
+
+#gerargato:active{
+    background-color: white;
+    color: black;
+    transform: scale(0.98);
+}
+
+#cato {
+    width: 35%;
+    height: auto;
+    border-radius: 2rem;
+    border: 0.4rem mediumslateblue;
+    border-style: inset;
+    
+}
+
+#title {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 8vh;
+    color: white;
+}

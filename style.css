@@ -10,7 +10,7 @@ main {
 
 
 
-#gerargato {
+.generateBtn {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
     color: white;
@@ -26,19 +26,19 @@ main {
     transition: background-color 0.05s ease-in-out;
 }
 
-#gerargato:hover {
+.generateBtn:hover {
     background-color: mediumpurple;
     color: lightgoldenrodyellow;
     transition: background-color 0.10s ease-in-out color 0.10s ease-in-out;
 }
 
-#gerargato:active{
+.generateBtn:active{
     background-color: white;
     color: black;
     transform: scale(0.98);
 }
 
-#cato {
+#animalPic {
     width: 25rem;
     min-height: 15rem;
     height: auto;
@@ -52,4 +52,14 @@ main {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 4rem;
     color: white;
+}
+
+#generateDiv {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#animalDiv{
+    justify-content: center;
 }

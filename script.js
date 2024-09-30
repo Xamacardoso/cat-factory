@@ -1,24 +1,25 @@
-const gatodiv = document.getElementById("gatodiv");
+const petDiv = document.getElementById("animalDiv");
 
-const generateRandomCat = () => {
-    const response = fetch("https://api.thecatapi.com/v1/images/search?size=thumb")
+const generateRandomAnimal = (animal) => {
+    const response = fetch("https://api.the"+animal+"api.com/v1/images/search?size=thumb")
         .then((response) => response.json())
         .then((data) => {
-            const cat = data[0];
-            changeCatDiv(cat, gatodiv);
+            const animal = data[0];
+            changePetDiv(animal, petDiv);
         });
 };
 
-const changeCatDiv = (cat, div) => {
+const changePetDiv = (pet, div) => {
     div.innerHTML = "";
-    div.textContent = !cat ? "Sem Catos" : "";
-    if (cat) {
+    div.textContent = !pet ? "Sem animais, clique num botão abaixo:" : "";
+    div.style = "color: white; font-family: Trebuchet MS";
+    if (pet) {
         element = document.createElement("img");
-        element.src = cat.url;
-        element.id = "cato";
-        console.log(cat);
+        element.src = pet.url;
+        element.id = "animalPic";
+        console.log(pet);
         div.appendChild(element);
     }
 };
 
-changeCatDiv(null, gatodiv);
+changePetDiv(null, petDiv);

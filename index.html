@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gato Aleatorio</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body id="body">
-    <main id="main">
-      <h1 id="title">Fábrica de Gatinhos</h1>
-      <div id="gatodiv"></div>
-      <button id="gerargato" onclick="generateRandomCat()">Clique aqui para gerar um <strong>gato</strong> aleatorio</button>
-    </main>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pet Aleatorio</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body id="body">
+        <main id="main">
+            <h1 id="title">Fábrica de Pets</h1>
+            <div id="animalDiv"></div>
+            <p style="color: white; font-family: Trebuchet MS">Gere mais um animal abaixo!</p>
+            <div id="generateDiv">
+                <button class="generateBtn" onclick="generateRandomAnimal('cat')">
+                    Gerar um <strong>gato🐱</strong> aleatorio
+                </button>
+                <button class="generateBtn" onclick="generateRandomAnimal('dog')">
+                    Gerar um
+                    <strong>cachorro🐶</strong> aleatorio
+                </button>
+            </div>
+        </main>
+    </body>
 </html>

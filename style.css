@@ -1,5 +1,6 @@
 body {
-    background-color: black;    
+    background-color: black;
+    min-height: 400px;   
 }
 
 main {
